@@ -1,7 +1,7 @@
 {
-  "name": "prime-boiler-node-angular",
+  "name": "antares-angular-router",
   "version": "1.0.0",
-  "description": "Boilerplate starting point for node, express, angular apps",
+  "description": "Angualar Routing Lecture starter",
   "main": "server/app.js",
   "scripts": {
     "test": "nodemon server/app.js",
