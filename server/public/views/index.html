@@ -2,14 +2,26 @@
 <html>
 <head>
     <title>Prime Angular Application</title>
-    
-    <script type="text/javascript" src="/scripts/client.js"></script>
 
+    <script type="text/javascript" src="/vendor/angular.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/random.controller.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/search.controller.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/favorites.controller.js"></script>
     <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
-<body>
+<body ng-app="myApp">
   <h1>Angular Routing!</h1>
+
+  <header ng-include="'/views/templates/nav.html'"></header>
+
+  <main ng-view></main>
+
+
+
+
 </body>
 </html>

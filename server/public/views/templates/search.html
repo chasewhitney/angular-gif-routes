@@ -1,0 +1,13 @@
+<div>
+  <h2>SEARCH HTML</h2>
+
+  <button class="btn btn-primary" ng-click="gif.searchGifs(search)">Submit</button>
+  <input type="text" ng-model="search">
+  <button class="btn btn-primary" type="button" name="button" ng-click="gif.previous()">Previous</button>
+  <button class="btn btn-primary" type="button" name="button" ng-click="gif.next()">Next</button>
+
+  <div ng-repeat="gifImg in gif.gifArray">
+    <img ng-src="{{gifImg.images.original.url}}"  />
+    <button type="button" class="btn btn-primary" ng-click="gif.saveFavorite(gifImg.images.original.url)">Save Favorite</button>
+  </div>
+</div>
