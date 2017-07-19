@@ -4,8 +4,8 @@
   "description": "Angualar Routing Lecture starter",
   "main": "server/app.js",
   "scripts": {
-    "test": "nodemon server/app.js",
-    "start": "node server/app.js"
+    "test": "nodemon server/server.js",
+    "start": "node server/server.js"
   },
   "author": "Kris Szafranski",
   "license": "ISC",
