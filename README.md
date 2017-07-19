@@ -1,5 +1,6 @@
 # Angular Router
 
+[See lecture notes here.](https://github.com/PrimeAcademy/omega-syllabus/blob/master/lecture_notes/05-01_angular-routing.md)
 
 ## How To Use
 
