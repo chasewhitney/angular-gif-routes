@@ -10,5 +10,12 @@ myApp.controller("FavoritesController", function($http){
       console.log('fav array is', fav.favoritesArray);
     });
 
+  fav.deleteFavorite = function(url){
+    $http.delete('/deleteFavorite', {params: {url: url}}).then(function(response){
+      console.log('deleted favorite', url);
+      fav.getFavorites();
+    });
+  };
+
   };
 });

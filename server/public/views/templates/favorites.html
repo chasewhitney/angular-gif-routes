@@ -3,5 +3,6 @@
 </div>
 
 <div ng-repeat="gif in fav.favoritesArray">
-<img ng-src="{{gif.imageurl}}" />
+  <img ng-src="{{gif.imageurl}}" />
+  <button type="button" class="btn btn-primary" ng-click="fav.deleteFavorite(gif.imageurl)">Delete Favorite</button>
 </div>
