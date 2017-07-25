@@ -1,8 +1,8 @@
 <div>
-  <button type="button" class="btn btn-primary" ng-click="fav.getFavorites()">Get Favorites</button>
+  <button type="button" class="btn btn-primary" ng-click="fav.giphyService.getFavorites()">Get Favorites</button>
 </div>
 
-<div ng-repeat="gif in fav.favoritesArray">
+<div ng-repeat="gif in fav.giphyService.favoritesArray">
   <img ng-src="{{gif.imageurl}}" />
-  <button type="button" class="btn btn-primary" ng-click="fav.deleteFavorite(gif.imageurl)">Delete Favorite</button>
+  <button type="button" class="btn btn-primary" ng-click="fav.giphyService.deleteFavorite(gif.imageurl)">Delete Favorite</button>
 </div>

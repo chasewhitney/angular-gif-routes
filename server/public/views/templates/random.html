@@ -1,11 +1,11 @@
 <div>
   <h2>Random HTML</h2>
-  <button type="button" class="btn btn-primary" ng-click="rc.getRandomGif()">Random Gif</button>
-  <div ng-repeat="gif in rc.gifRandomArray">
+  <button type="button" class="btn btn-primary" ng-click="rc.giphyService.getRandomGif()">Random Gif</button>
+  <div ng-repeat="gif in rc.giphyService.gifRandomArray">
 
 
   <img  ng-src="{{gif}}" />
-  <button type="button" class="btn btn-primary" ng-click="rc.saveFavorite(gif)">Save Favorite</button>
-  
+  <button type="button" class="btn btn-primary" ng-click="rc.giphyService.saveFavorite(gif)">Save Favorite</button>
+
   </div>
 </div>
